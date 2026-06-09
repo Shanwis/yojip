@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yojip"
+version = "0.0.1"
+description = "Join multiple audio outputs into synchronized PipeWire combined sinks"
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "Ashwin S", email = "ashsanthosh8@gmail.com"}
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+yojip = "yojip.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["yojip*"]
