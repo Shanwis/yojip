@@ -22,13 +22,15 @@ Uses `argparse`. No external Python dependencies.
 
 Commands:
 - `yojip outputs` — list audio sinks by parsing `pw-dump` JSON
-- `yojip party create/add/remove/list/destroy` — manage combined sinks
+- `yojip party` / `yojip party create` — create combined sink with all outputs, set as default
+- `yojip party delete` — destroy the combined sink
 
 ## PipeWire integration
 
-All interaction via `subprocess` calls to PipeWire CLI tools:
+All interaction via `subprocess` calls to PipeWire/PulseAudio CLI tools:
 - `pw-dump` — enumerate objects (sinks, nodes)
-- `pw-cli` — create/destroy/adapter nodes (combined sinks, loopbacks)
+- `pw-cli` — destroy nodes
+- `pactl` — load `module-combine-sink` and set default sink
 
 ## Development
 

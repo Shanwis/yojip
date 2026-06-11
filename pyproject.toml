@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yojip"
-version = "0.0.1"
+version = "0.1.0"
 description = "Join multiple audio outputs into synchronized PipeWire combined sinks"
 readme = "README.md"
 license = "MIT"

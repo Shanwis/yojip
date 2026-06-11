@@ -2,16 +2,19 @@
 
 Join multiple audio outputs into synchronized PipeWire combined sinks ("parties").
 
-## Usage
+## Commands
 
-```text
-yojip outputs              List available audio outputs
-yojip party create NAME    Create a combined sink
-yojip party add NAME OUT   Add output to a party
-yojip party remove NAME OUT
-yojip party list
-yojip party destroy NAME
 ```
+yojip outputs              List available audio outputs
+yojip party                Create a combined sink with all outputs (and set it as default)
+yojip party create         Same as above
+yojip party delete         Destroy the combined sink
+```
+
+## Requirements
+
+- PipeWire (with `pipewire-pulse` for `pactl`)
+- Python 3.10+
 
 ## Installation
 
@@ -19,4 +22,8 @@ yojip party destroy NAME
 pip install yojip
 ```
 
-Requires PipeWire (typically pre-installed on modern Linux audio systems).
+Or run from source:
+
+```bash
+python -m yojip outputs
+```
