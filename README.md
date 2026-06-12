@@ -2,6 +2,15 @@
 
 Join multiple audio outputs into synchronized PipeWire combined sinks ("parties").
 
+Yojip is a lightweight command-line utility for Linux that lets you play audio through multiple output devices simultaneously using PipeWire. It automatically creates and manages combined sinks, making it easy to stream audio to speakers, headphones, Bluetooth devices, and other outputs at the same time.
+
+## Features
+- List available audio outputs
+- Create synchronized combined sinks across multiple devices
+- Automatically set the combined sink as the default output
+- Remove combined sinks when no longer needed
+- Simple CLI interface
+
 ## Commands
 
 ```
@@ -27,3 +36,7 @@ Or run from source:
 ```bash
 python -m yojip outputs
 ```
+
+## LICENSE
+
+This project is licensed under the MIT License. See the LICENSE file for details.
