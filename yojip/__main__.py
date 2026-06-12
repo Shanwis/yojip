@@ -5,7 +5,6 @@ import sys
 
 PARTY_NAME = "yojip_party"
 
-
 def _pw_dump():
     try:
         result = subprocess.run(
@@ -86,7 +85,8 @@ def cmd_party(args):
         subprocess.run(
             ["pactl", "load-module", "module-combine-sink",
              f"sink_name={PARTY_NAME}",
-             f"slaves={slave_names}"],
+             f"slaves={slave_names}",
+             "latency_compensate=true"],
             capture_output=True, text=True, check=True,
         )
     except FileNotFoundError:
