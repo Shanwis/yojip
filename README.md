@@ -1,5 +1,10 @@
 # Yojip
 
+[![PyPI version](https://img.shields.io/pypi/v/yojip.svg)](https://pypi.org/project/yojip/)
+[![Python versions](https://img.shields.io/pypi/pyversions/yojip.svg)](https://pypi.org/project/yojip/)
+[![Downloads](https://img.shields.io/pypi/dm/yojip.svg)](https://pypi.org/project/yojip/)
+[![License](https://img.shields.io/github/license/Shanwis/Yojip.svg)](https://github.com/Shanwis/Yojip/blob/main/LICENSE)
+
 Join multiple audio outputs into synchronized PipeWire combined sinks ("parties").
 
 Yojip is a lightweight command-line utility for Linux that lets you play audio through multiple output devices simultaneously using PipeWire. It automatically creates and manages combined sinks, making it easy to stream audio to speakers, headphones, Bluetooth devices, and other outputs at the same time.
